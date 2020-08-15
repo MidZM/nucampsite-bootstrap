@@ -2,6 +2,13 @@ $(function() {
     $('.carousel').carousel({
         interval: 2000
     });
+
+    $('#reserveButton').click(function() {
+        $('#reserveModal').modal('show');
+    });
+    $('#loginButton').click(function() {
+        $('#loginModal').modal('show');
+    });
 });
 $('#carouselButton').click(function() {
     if ($('#carouselButton').children("i").hasClass("fa-pause")) {
